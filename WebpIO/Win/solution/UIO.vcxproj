@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E409AC8C-B54F-49E3-BEAC-CDDCF818C84D}</ProjectGuid>
+    <ProjectName>UIO</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\libwebp\dev\Lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/UIO.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\UIO_Plugin;..\libwebp\dev\Include;..\;..\..\..\AE\Headers\SP;..\..\..\AE\Headers\Legacy;..\..\..\AE\Headers\AS;..\..\..\AE\Headers\ADM;..\..\..\AE\Resources;..\..\..\AE\Util;..\..\..\AE\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MSWindows;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <PrecompiledHeaderOutputFile>.\Debug/UIO.pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(AE_PLUGIN_BUILD_DIR)\AEGP\UIO.aex</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/UIO.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\Debug/UIO.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>libwebp_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions> /FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\AE\Util\AEGP_SuiteHandler.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\Codec.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\CodecBase.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\CodecSystem.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\CodecSystemBase.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\Decoder.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\DecoderBase.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\DecoderSystem.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\DecoderSystemBase.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\ImageDecoder.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\Config.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\FileSystem\FileStreamCRT.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\FileSystem\FileSystem.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\FileSystem\FileSystem_T.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\Holder.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\Initialized.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\LogSystem\Logger.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\LogSystem\LoggerFile.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\LogSystem\LogSystem.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\LogSystem\LogSystemBase.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\Platform\Platform.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\Platform\PlatformWin32.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\Plugin.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\Stream\InputStream.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\Stream\OutputStream.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\Stream\Stream.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\System.h" />
+    <ClInclude Include="..\..\..\UIO_Plugin\UIO_Plugin_Header.h" />
+    <ClInclude Include="..\..\..\AE\Headers\A.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AE_Effect.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AE_EffectCB.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AE_EffectCBSuites.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AE_EffectSuites.h" />
+    <ClInclude Include="..\..\..\AE\Util\AE_EffectSuitesHelper.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AE_EffectUI.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AE_GeneralPlug.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AE_GeneralPlugOld.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AE_IO.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AE_Macros.h" />
+    <ClInclude Include="..\..\..\AE\Util\entry.h" />
+    <ClInclude Include="..\..\..\AE\Headers\FIEL_Public.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PF_Masks.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PR_Public.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AS\ASConfig.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AS\ASHelp.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AS\ASPragma.h" />
+    <ClInclude Include="..\..\..\AE\Headers\AS\ASTypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H" />
+    <ClInclude Include="..\..\..\AE\Headers\PT_Public.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPAccess.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPAdapts.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPAdapts.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPBasic.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPBasic.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPCaches.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPCaches.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPConfig.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPConfig.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPErrorCodes.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPErrorCodes.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPFiles.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPFiles.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPInterf.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPMData.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPMData.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPPiPL.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPPiPL.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPPlugs.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPPlugs.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPProps.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPProps.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPStrngs.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPStrngs.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPSuites.h" />
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPTypes.h" />
+    <ClInclude Include="..\..\..\AE\Headers\SPTypes.h" />
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMBasic.h" />
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMBasicOld.h" />
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMDialog.h" />
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMDialogGroup.h" />
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMDialogGroupOld.h" />
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMDialogOld.h" />
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMEntry.h" />
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMEntryOld.h" />
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMItem.h" />
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMItemOld.h" />
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMList.h" />
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMListOld.h" />
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMNotifier.h" />
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMNotifierOld.h" />
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMTracker.h" />
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMTypes.h" />
+    <ClInclude Include="..\..\src\ImageDecoderWEBP.h" />
+    <ClInclude Include="..\UIO.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\UIO_PiPL.r">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling the PiPL</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl /I "$(ProjectDir)..\..\..\AE\Headers" /EP ".."\\"%(Filename).r" &gt; "$(IntDir)"\\"%(Filename).rr"
+"$(ProjectDir)..\..\..\AE\Resources\PiPLTool" "$(IntDir)%(Filename).rr" "$(IntDir)%(Filename).rrc"
+cl /D "MSWindows" /EP $(IntDir)%(Filename).rrc &gt;               "$(ProjectDir)"\\"%(Filename)"_temp.rc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)%(Filename)_temp.rc;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UIO_PiPL.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\AE\Util\AEGP_SuiteHandler.cpp" />
+    <ClCompile Include="..\..\..\AE\Util\MissingSuiteError.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\CodecSystem\CodecBase.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\CodecSystem\CodecSystemBase.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\CodecSystem\DecoderBase.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\CodecSystem\DecoderSystemBase.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\CodecSystem\ImageDecoder.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\FileSystem\FileStreamCRT.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\Initialized.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\LogSystem\LoggerFile.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\LogSystem\LogSystemBase.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\Platform\PlatformWin32.cpp" />
+    <ClCompile Include="..\..\..\UIO_Plugin\Plugin.cpp" />
+    <ClCompile Include="..\..\src\ImageDecoderWEBP.cpp" />
+    <ClCompile Include="..\PluginWin32.cpp" />
+    <ClCompile Include="..\UIO.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

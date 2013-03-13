@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{1c3ef35f-4aca-44ff-b84a-9da374fbc2b1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Headers\AE">
+      <UniqueIdentifier>{36c3947c-19fc-45c4-88e8-4087981511ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\AE\PICA">
+      <UniqueIdentifier>{d8b66ece-2097-4936-a783-baf8c4554203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\AE\ADM">
+      <UniqueIdentifier>{b1709fd5-5b69-4d4f-8c44-107bdbd95be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{65a8dabd-f753-4a96-b07a-3abb53aff71e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="UIO_Plugin">
+      <UniqueIdentifier>{612b32f3-431c-4b43-9a47-1cab7ba408c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIO_Plugin\Codec">
+      <UniqueIdentifier>{02bac812-15e9-4a25-a0e7-be10d88c1e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIO_Plugin\Log">
+      <UniqueIdentifier>{f841ae49-2426-4ffa-bd85-acc968228b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIO_Plugin\File">
+      <UniqueIdentifier>{1b689274-58c3-4d02-a74b-0b52c65646d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIO_Plugin\Stream">
+      <UniqueIdentifier>{284897ad-e777-41c0-82a8-3b6f87f59835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIO_Plugin\Platform">
+      <UniqueIdentifier>{13ae6db3-53b4-4b59-9ce1-2dbebf789fbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebP">
+      <UniqueIdentifier>{9dc59e53-538d-4a6b-a14e-184f5526215f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H">
+      <Filter>Headers\AE\PICA</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Util\AEGP_SuiteHandler.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\A.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AE_Effect.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AE_EffectCB.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AE_EffectCBSuites.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AE_EffectSuites.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Util\AE_EffectSuitesHelper.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AE_EffectUI.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AE_GeneralPlug.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AE_GeneralPlugOld.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AE_IO.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AE_Macros.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Util\entry.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\FIEL_Public.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PF_Masks.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PR_Public.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AS\ASConfig.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AS\ASHelp.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AS\ASPragma.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\AS\ASTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PT_Public.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPAccess.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPAdapts.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPAdapts.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPBasic.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPBasic.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPCaches.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPCaches.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPConfig.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPConfig.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPErrorCodes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPErrorCodes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPFiles.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPFiles.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPInterf.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPMData.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPMData.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPPiPL.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPPiPL.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPPlugs.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPPlugs.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPProps.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPProps.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPStrngs.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPStrngs.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPSuites.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\PICA\SPTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\SPTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMBasic.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMBasicOld.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMDialog.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMDialogGroup.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMDialogGroupOld.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMDialogOld.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMEntry.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMEntryOld.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMItem.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMItemOld.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMList.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMListOld.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMNotifier.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\Legacy\ADMNotifierOld.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMTracker.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\AE\Headers\ADM\ADMTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\Config.h">
+      <Filter>UIO_Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\Holder.h">
+      <Filter>UIO_Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\Initialized.h">
+      <Filter>UIO_Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\Plugin.h">
+      <Filter>UIO_Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\System.h">
+      <Filter>UIO_Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\UIO_Plugin_Header.h">
+      <Filter>UIO_Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\Codec.h">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\CodecBase.h">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\CodecSystem.h">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\CodecSystemBase.h">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\Decoder.h">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\DecoderBase.h">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\DecoderSystem.h">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\DecoderSystemBase.h">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\CodecSystem\ImageDecoder.h">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\LogSystem\Logger.h">
+      <Filter>UIO_Plugin\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\LogSystem\LoggerFile.h">
+      <Filter>UIO_Plugin\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\LogSystem\LogSystem.h">
+      <Filter>UIO_Plugin\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\LogSystem\LogSystemBase.h">
+      <Filter>UIO_Plugin\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\FileSystem\FileStreamCRT.h">
+      <Filter>UIO_Plugin\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\FileSystem\FileSystem.h">
+      <Filter>UIO_Plugin\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\FileSystem\FileSystem_T.h">
+      <Filter>UIO_Plugin\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\Stream\InputStream.h">
+      <Filter>UIO_Plugin\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\Stream\OutputStream.h">
+      <Filter>UIO_Plugin\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\Stream\Stream.h">
+      <Filter>UIO_Plugin\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\Platform\Platform.h">
+      <Filter>UIO_Plugin\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UIO_Plugin\Platform\PlatformWin32.h">
+      <Filter>UIO_Plugin\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UIO.h" />
+    <ClInclude Include="..\..\src\ImageDecoderWEBP.h">
+      <Filter>WebP</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UIO_PiPL.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\UIO_Plugin\Initialized.cpp">
+      <Filter>UIO_Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UIO_Plugin\Plugin.cpp">
+      <Filter>UIO_Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UIO_Plugin\CodecSystem\CodecBase.cpp">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UIO_Plugin\CodecSystem\CodecSystemBase.cpp">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UIO_Plugin\CodecSystem\DecoderBase.cpp">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UIO_Plugin\CodecSystem\DecoderSystemBase.cpp">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UIO_Plugin\CodecSystem\ImageDecoder.cpp">
+      <Filter>UIO_Plugin\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UIO_Plugin\LogSystem\LoggerFile.cpp">
+      <Filter>UIO_Plugin\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UIO_Plugin\LogSystem\LogSystemBase.cpp">
+      <Filter>UIO_Plugin\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UIO_Plugin\FileSystem\FileStreamCRT.cpp">
+      <Filter>UIO_Plugin\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UIO_Plugin\Platform\PlatformWin32.cpp">
+      <Filter>UIO_Plugin\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PluginWin32.cpp" />
+    <ClCompile Include="..\UIO.cpp" />
+    <ClCompile Include="..\..\src\ImageDecoderWEBP.cpp">
+      <Filter>WebP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\AE\Util\AEGP_SuiteHandler.cpp" />
+    <ClCompile Include="..\..\..\AE\Util\MissingSuiteError.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\UIO_PiPL.r">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

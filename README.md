@@ -1,4 +1,4 @@
 UIO_Plugin
 ==========
 
-C++ Framework for Adobe After Effects IO Plugins
+C++ Framework for Adobe After Effects CS4 IO Plugins.
